@@ -1,0 +1,498 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+P {
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+section h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+section span {
+    color: #0960a5;
+    font-weight: bold;
+}
+
+
+/*****************************************************
+          HEADER
+*****************************************************/
+
+/***** Drop Down Menu *****/
+
+.navBack,.navbar-fixed-top {
+    background-color: #272727;
+}
+/****************************/
+
+.navbar {
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    transition: 1s all ease;
+}
+#navbar a {
+    color: #fff;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    color: #0960a5;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #0960a5 !important;
+}
+
+.navbar-brand {
+    padding: 8px 25px 0 25px;
+}
+
+.navbar-header button {
+    border: none;
+}
+
+.fa {
+    color: #fff;
+}
+
+.fa:hover {
+    color: #0960a5;
+}
+
+.effect {
+    background-color: #272727;
+    transition: 1s all ease;
+}
+/*****************************************************
+          JUMBOTRON
+*****************************************************/
+
+.jumbotron {
+    background: url("../img/nyc2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.jumbotron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29, 37, 43, 0.30);
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one           */
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1,.jumbotron p {
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.glyphicon {
+    font-size: 46px;
+    padding-top: 120px;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+.glyphicon:hover {
+    color: #0960a5;
+}
+
+
+/*****************************************************
+          ABOUT
+*****************************************************/
+
+section#aboutMe {
+    font-size: 16px;
+    background-color: #fff;
+    color: #272727;
+    padding: 35px 0 35px 0;
+}
+
+section#aboutMe p {
+    opacity: 0;
+}
+
+.selfImg {
+    width: 275px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/*****************************************************
+          SKILLS
+*****************************************************/
+
+section#skills {
+    padding: 35px 0 35px 0;
+    background-color: #0960a5;
+}
+
+section#skills img {
+    border-radius: 50%;
+    width: 135px;
+    opacity: 0;
+}
+
+section#skills h1 {
+    color: #272727;
+}
+
+section#skills p {
+    color: #272727;
+    padding-top: 12px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.reactImg {
+    background-color: #272727;
+}
+
+.webpackImg {
+    background-color: #f5f5dc;
+}
+
+
+/*****************************************************
+          PORTFOLIO
+*****************************************************/
+
+section#portfolio {
+    padding: 35px 0 45px 0;
+    background-color: #e2e2e2;
+}
+
+section#portfolio .projectRows {
+    margin-top: 75px;
+}
+
+.img-container {
+    position: relative;
+    border: 4px solid #272727;
+    height: 300px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-overlay img {
+    width: 590px;
+    height: 300px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.img-overlay:hover .overlay-text {
+    opacity: 1;
+    background-color: rgba(9, 96, 165, 0.75);
+}
+
+.img-overlay:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.project-link a {
+   text-decoration: none;
+}
+
+.project-link div {
+    outline: none;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.4s ease-in;
+}
+
+.project-link div:hover {
+    background-color: #272727;
+}
+
+.git-link, .demo-link {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.git-link {
+    margin-bottom: 14px;
+}
+
+.rightAnimate {
+    opacity: 0;
+}
+
+.projectRows p {
+    padding-top: 60px;
+}
+
+.rightAnimate p {
+    padding-left: 25px;
+}
+
+.leftAnimate p {
+    padding-right: 25px;
+    margin-left: 20px;
+}
+
+.leftAnimate {
+    opacity: 0;
+}
+
+
+/*****************************************************
+          CONTACT
+*****************************************************/
+
+section#contact {
+    padding: 10px 0 35px 0;
+    background-color: #272727;
+    color: #fff;
+}
+
+section#contact h1 {
+    font-size: 7rem;
+}
+
+section#contact h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0960a5;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-icons i {
+    padding: 0;
+    font-size: 2em;
+}
+
+.contact-icons > div {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ff7144;
+    margin-right: 5px;
+}
+/*****************************************************
+         SCROLL ANIMATIONS
+*****************************************************/
+.animationDelay {
+    animation-delay: .4s;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeftBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+}
+
+@-webkit-keyframes fadeInRightBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRightBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig;
+}
+
+/*****************************************************
+          MEDIA QUERIES
+*****************************************************/
+@media(max-width:767px) {
+    .center-block {
+        float: none;
+    }
+
+    section h1 {
+        font-size: 5rem;
+    }
+
+    .leftAnimate p {
+        padding-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .rightAnimate p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .projectRows p {
+        padding-top: 20px;
+    }
+}
