@@ -10,10 +10,9 @@
         $('.navbar-header').toggleClass('navBack');
     });
 
-    $('.nav a').on('click', function(){
-        $('.navbar-toggle').click();
+    $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
     });
-
 
     //fade in nav after scrolling down
     if (distance.top >= 600) {
