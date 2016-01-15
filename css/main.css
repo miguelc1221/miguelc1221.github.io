@@ -17,7 +17,6 @@ section span {
     font-weight: bold;
 }
 
-
 /*****************************************************
           HEADER
 *****************************************************/
@@ -282,6 +281,9 @@ section#portfolio .projectRows {
     opacity: 0;
 }
 
+/*.mobile-project-link div {*/
+    /*display: none;*/
+/*}*/
 
 /*****************************************************
           CONTACT
@@ -299,14 +301,6 @@ section#contact h1 {
 
 section#contact h3 {
     margin-bottom: 20px;
-}
-
-footer {
-    background-color: #0960a5;
-}
-
-footer p {
-    margin: 0;
 }
 
 .contact-icons {
@@ -331,6 +325,19 @@ footer p {
     background-color: #ff7144;
     margin-right: 5px;
 }
+
+/*****************************************************
+         FOOTER
+*****************************************************/
+
+footer {
+    background-color: #0960a5;
+}
+
+footer p {
+    margin: 0;
+}
+
 /*****************************************************
          SCROLL ANIMATIONS
 *****************************************************/
@@ -494,5 +501,39 @@ footer p {
 
     .projectRows p {
         padding-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .project-link {
+        display: none;
+    }
+
+    .overlay-text {
+        display: none;
+    }
+
+    .img-overlay:hover img{
+        transform: none;
+    }
+
+    .mobile-project-link div {
+        outline: none;
+        border: 2px solid black;
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        background-color: #ff7144;
+    }
+
+    .img-container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+}
+
+@media(min-width:768px){
+    .mobile-project-link {
+        display: none;
     }
 }

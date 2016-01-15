@@ -1,14 +1,19 @@
 (function() {
 
+    var nav = $('.navbar');
+    var navTabs = $('#navbar a');
+    var distance = nav.offset();
+    var htmlBody = $('html, body');
+
     $('.navbar-toggle').click(function() {
         $('#navbar').toggleClass('navBack');
         $('.navbar-header').toggleClass('navBack');
     });
 
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click();
+    });
 
-    var nav = $('.navbar');
-    var navTabs = $('#navbar a');
-    var distance = nav.offset();
 
     //fade in nav after scrolling down
     if (distance.top >= 600) {
@@ -18,7 +23,7 @@
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 600) {
+        if (scroll >= 400) {
             nav.addClass('effect');
 
             //color <a> when selecting tab
@@ -43,7 +48,6 @@
         }
     });
 
-    var htmlBody = $('html, body');
     //smooth scrolling
     $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
         // prevent default anchor click behavior
@@ -89,13 +93,21 @@
     });
 
     $('.rightAnimate').waypoint(function() {
-        $(this.element).addClass('animated fadeInRightBig');
+        if($(window).width() < 767) {
+            $(this.element).addClass('animated fadeIn');
+        } else {
+            $(this.element).addClass('animated fadeInRightBig');
+        }
     },{
         offset: '70%'
     });
 
     $('.leftAnimate').waypoint(function() {
-        $(this.element).addClass('animated fadeInLeftBig');
+        if($(window).width() < 767) {
+            $(this.element).addClass('animated fadeIn');
+        } else {
+            $(this.element).addClass('animated fadeInLeftBig');
+        }
     },{
         offset: '70%'
     });
