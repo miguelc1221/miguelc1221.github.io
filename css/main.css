@@ -2,11 +2,6 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
-P {
-    font-size: 21px;
-    line-height: 1.8;
-}
-
 section h1 {
     font-size: 10rem;
     font-weight: bold;
@@ -138,6 +133,8 @@ section#aboutMe {
 
 section#aboutMe p {
     opacity: 0;
+    font-size: 21px;
+    line-height: 1.8;
 }
 
 .selfImg {
@@ -237,6 +234,36 @@ section#portfolio .projectRows {
    text-decoration: none;
 }
 
+.project-info {
+    margin-left: 40px;
+}
+
+.project-info h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.project-info p {
+    line-height: 2;
+}
+
+.project-labels {
+    list-style: none;
+    padding: 0;
+}
+
+.project-labels li {
+    display: inline;
+}
+
+span.label {
+    background-color: #0960a5;
+    padding: 4px 9px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    font-size: 12px;
+    line-height: 32px;
+}
+
 .project-link div {
     outline: none;
     border: 2px solid black;
@@ -265,26 +292,9 @@ section#portfolio .projectRows {
     opacity: 0;
 }
 
-.projectRows p {
-    padding-top: 60px;
-}
-
-.rightAnimate p {
-    padding-left: 25px;
-}
-
-.leftAnimate p {
-    padding-right: 25px;
-    margin-left: 20px;
-}
-
 .leftAnimate {
     opacity: 0;
 }
-
-/*.mobile-project-link div {*/
-    /*display: none;*/
-/*}*/
 
 /*****************************************************
           CONTACT
@@ -490,20 +500,9 @@ footer p {
         font-size: 5rem;
     }
 
-    .leftAnimate p {
-        padding-right: 0;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .rightAnimate p {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .projectRows p {
-        padding-top: 20px;
-        margin-bottom: 25px;
+    .project-info {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .project-link {
@@ -518,12 +517,17 @@ footer p {
         transform: none;
     }
 
+    .mobile-project-link {
+        padding-top: 25px;
+    }
+
     .mobile-project-link div {
         outline: none;
         border: 2px solid black;
         width: 100px;
         text-align: center;
         padding: 5px;
+        margin-top: 2px;
         background-color: #ff7144;
     }
 
