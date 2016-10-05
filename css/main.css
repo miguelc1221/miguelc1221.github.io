@@ -169,6 +169,10 @@ section#skills p {
     font-size: 2rem;
 }
 
+.angularImg {
+    background-color: #fff;
+}
+
 .reactImg {
     background-color: #272727;
 }
